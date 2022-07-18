@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-['Epilogue'] bg-neutral-50">
+
+  <nav class="p-8 text-gray-500">
+    <div class="container flex justify-between items-center mx-auto">
+      <a href="" class="mt-1 mr-14">
+        <img src="./images/logo.svg" alt="Logo" class="object-fit-scale-down" />
+      </a>
+      <ul class="flex grow gap-10">
+        <li class="group">
+          <a href="#" class="group-hover:text-neutral-900">Features</a>
+          <div class="hidden group-hover:block absolute pt-5">
+            <div class="p-5 bg-white rounded-lg shadow">
+              <ul class="flex flex-col gap-2">
+                <li>
+                  <a href="#" class="inline-flex">
+                    <img src="./images/icon-todo.svg" class="object-scale-down mr-3" />
+                    Todo List
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="inline-flex">
+                    <img src="./images/icon-calendar.svg" class="object-scale-down mr-3" />
+                    Calendar
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="inline-flex">
+                    <img src="./images/icon-reminders.svg" class="object-scale-down mr-3" />
+                    Reminders
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="inline-flex">
+                    <img src="./images/icon-planning.svg" class="object-scale-down mr-3" />
+                    Planning
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li class="group">
+          <a href="#" class="group-hover:text-neutral-900">Company</a>
+          <div class="hidden group-hover:block absolute pt-5">
+            <div class="p-5 bg-white rounded-lg shadow">
+              <ul class="flex flex-col gap-2">
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li><a href="#" class="hover:text-neutral-900">Careers</a></li>
+        <li><a href="#" class="hover:text-neutral-900">About</a></li>
+      </ul>
+      <div class="flex gap-10">
+        <a href="#" class="px-6 py-2 hover:text-neutral-900">Login</a>
+        <a href="#" class="px-6 py-2 hover:text-neutral-900 rounded-2xl border-2 border-gray-400 hover:border-neutral-900">Register</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="px-32 py-20 mx-auto">
+    <div class="container flex flex-row mx-auto">
+      <div class="basis-3/5 flex flex-col justify-between">
+        <div class="flex flex-col gap-10 pt-28 pr-28">
+          <h1 class="font-bold text-7xl">
+            Make <br /> remote work
+          </h1>
+  
+          <p class="text-lg text-gray-500">
+            Get your team in sync, no matter your location. Streamline processes, 
+            create team rituals, and watch productivity soar.
+          </p>
+
+          <button href="#" class="px-8 py-4 w-fit text-neutral-50 bg-neutral-900 rounded-2xl border-2">
+            Learn more
+          </button>
+        </div>
+
+        <div class="flex gap-10">
+          <img src="./images/client-databiz.svg" class="object-scale-down" />
+          <img src="./images/client-audiophile.svg" class="object-scale-down" />
+          <img src="./images/client-meet.svg" class="object-scale-down" />
+          <img src="./images/client-maker.svg" class="object-scale-down" />
+        </div>
+      </div>
+
+      <div class="basis-2/5">
+        <img src="./images/image-hero-desktop.png" />
+      </div>
+    </div>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>
