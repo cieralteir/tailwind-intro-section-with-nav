@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://intro-section-with-nav.netlify.app](https://intro-section-with-nav.netlify.app)
+- Live Site URL: [https://cieralteir.github.io/tailwind-intro-section-with-nav/](https://cieralteir.github.io/tailwind-intro-section-with-nav/)
 
 ## My process
 
