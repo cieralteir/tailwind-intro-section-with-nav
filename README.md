@@ -23,14 +23,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./desktop.jpg)
-![](./desktop-active.jpg)
-![](./mobile.jpg)
-![](./mobile-nav.jpg)
+![](./desktop.png)
+![](./desktop-active.png)
+![](./mobile.png)
+![](./mobile-nav.png)
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://intro-section-with-nav.netlify.app)
+- Live Site URL: [https://intro-section-with-nav.netlify.app](https://intro-section-with-nav.netlify.app)
 
 ## My process
 
