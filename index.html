@@ -25,67 +25,74 @@
       <a href="" class="mt-1 mr-14">
         <img src="./images/logo.svg" alt="Logo" class="object-fit-scale-down" />
       </a>
-      <ul class="hidden lg:flex grow gap-10">
-        <li class="group">
-          <a href="#" class="inline-flex gap-2 group-hover:text-neutral-900">
-            Features
-            <img src="./images/icon-arrow-down.svg" class="object-scale-down group-hover:hidden" />
-            <img src="./images/icon-arrow-up.svg" class="object-scale-down hidden group-hover:block" />
-          </a>
-          <div class="hidden group-hover:block absolute pt-5">
-            <div class="p-5 bg-white rounded-lg shadow">
-              <ul class="flex flex-col gap-2">
-                <li>
-                  <a href="#" class="inline-flex">
-                    <img src="./images/icon-todo.svg" class="object-scale-down mr-3" />
-                    Todo List
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="inline-flex">
-                    <img src="./images/icon-calendar.svg" class="object-scale-down mr-3" />
-                    Calendar
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="inline-flex">
-                    <img src="./images/icon-reminders.svg" class="object-scale-down mr-3" />
-                    Reminders
-                  </a>
-                </li>
-                <li>
-                  <a href="#" class="inline-flex">
-                    <img src="./images/icon-planning.svg" class="object-scale-down mr-3" />
-                    Planning
-                  </a>
-                </li>
-              </ul>
+
+      <div class="nav-backdrop invisible lg:invisible fixed inset-0 bg-black opacity-75"></div>
+      <div class="nav fixed lg:static top-0 right-[-60%] lg:right-0 z-20 flex flex-col lg:flex-row grow items-start lg:items-center gap-10 h-screen lg:h-fit w-3/5 lg:w-fit bg-neutral-50 p-5 lg:p-0 transition-all lg:transition-none">
+        <img src="./images/icon-close-menu.svg" class="lg:hidden self-end" onclick="toggleMenu()" />
+        <ul class="flex flex-col lg:flex-row grow-0 lg:grow gap-5 lg:gap-10">
+          <li class="group">
+            <a href="#" class="inline-flex gap-2 lg:group-hover:text-neutral-900" onclick="toggleNav(this)">
+              Features
+              <img src="./images/icon-arrow-down.svg" class="dropdown-icon-down object-scale-down lg:group-hover:hidden" />
+              <img src="./images/icon-arrow-up.svg" class="dropdown-icon-up object-scale-down hidden lg:group-hover:block" />
+            </a>
+            <div class="dropdown hidden lg:group-hover:block lg:absolute pt-5 transition-all">
+              <div class="px-5 lg:py-5 bg-neutral-50 lg:bg-white rounded-lg lg:shadow">
+                <ul class="flex flex-col gap-2">
+                  <li>
+                    <a href="#" class="inline-flex">
+                      <img src="./images/icon-todo.svg" class="object-scale-down mr-3" />
+                      Todo List
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="inline-flex">
+                      <img src="./images/icon-calendar.svg" class="object-scale-down mr-3" />
+                      Calendar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="inline-flex">
+                      <img src="./images/icon-reminders.svg" class="object-scale-down mr-3" />
+                      Reminders
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="inline-flex">
+                      <img src="./images/icon-planning.svg" class="object-scale-down mr-3" />
+                      Planning
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </li>
-        <li class="group">
-          <a href="#" class="inline-flex gap-2 group-hover:text-neutral-900">
-            Company
-            <img src="./images/icon-arrow-down.svg" class="object-scale-down group-hover:hidden" />
-            <img src="./images/icon-arrow-up.svg" class="object-scale-down hidden group-hover:block" />
-          </a>
-          <div class="hidden group-hover:block absolute pt-5">
-            <div class="p-5 bg-white rounded-lg shadow">
-              <ul class="flex flex-col gap-2">
-                <li><a href="#">History</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
+          </li>
+          <li class="group">
+            <a href="#" class="inline-flex gap-2 lg:group-hover:text-neutral-900" onclick="toggleNav(this)">
+              Company
+              <img src="./images/icon-arrow-down.svg" class="dropdown-icon-down object-scale-down lg:group-hover:hidden" />
+              <img src="./images/icon-arrow-up.svg" class="dropdown-icon-up object-scale-down hidden lg:group-hover:block" />
+            </a>
+            <div class="dropdown hidden lg:group-hover:block lg:absolute pt-5">
+              <div class="px-5 lg:py-5 bg-neutral-50 lg:bg-white rounded-lg lg:shadow">
+                <ul class="flex flex-col gap-2">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </div>
             </div>
-          </div>
-        </li>
-        <li><a href="#" class="hover:text-neutral-900">Careers</a></li>
-        <li><a href="#" class="hover:text-neutral-900">About</a></li>
-      </ul>
-      <div class="hidden lg:flex gap-10">
-        <a href="#" class="px-6 py-2 hover:text-neutral-900">Login</a>
-        <a href="#" class="px-6 py-2 hover:text-neutral-900 rounded-2xl border-2 border-gray-400 hover:border-neutral-900">Register</a>
+          </li>
+          <li><a href="#" class="hover:text-neutral-900">Careers</a></li>
+          <li><a href="#" class="hover:text-neutral-900">About</a></li>
+        </ul>
+        <div class="flex flex-col lg:flex-row items-center self-center gap-2 lg:gap-10">
+          <a href="#" class="px-6 py-2 hover:text-neutral-900">Login</a>
+          <a href="#" class="px-6 py-2 hover:text-neutral-900 rounded-2xl border-2 border-gray-400 hover:border-neutral-900">Register</a>
+        </div>
       </div>
+
+      <img src="./images/icon-menu.svg" class="object-scale-down lg:hidden" onclick="toggleMenu()" />
     </div>
   </nav>
 
@@ -131,5 +138,20 @@
   </div>
 
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleMenu() {
+      const nav = document.querySelector(".nav");
+      nav.classList.toggle("right-0");
+      nav.classList.toggle("right-[-60%]");
+      const navbackdrop = document.querySelector(".nav-backdrop");
+      navbackdrop.classList.toggle("invisible");
+    }
+    function toggleNav(e) {
+      const parent = e.parentElement;
+      e.parentElement?.querySelector(".dropdown")?.classList.toggle("hidden");
+      e.parentElement?.querySelector(".dropdown-icon-down")?.classList.toggle("hidden");
+      e.parentElement?.querySelector(".dropdown-icon-up")?.classList.toggle("hidden");
+    }
+  </script>
 </body>
 </html>
