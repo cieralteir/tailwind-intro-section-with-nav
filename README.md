@@ -23,10 +23,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./desktop.png)
-![](./desktop-active.png)
-![](./mobile.png)
-![](./mobile-nav.png)
+![Desktop](./screenshots/desktop.png)
+![Desktop Active](./screenshots/desktop-active.png)
+![Mobile](./screenshots/mobile.png)
+![Mobile Nav](./screenshots/mobile-nav.png)
 
 ### Links
 
